@@ -16,8 +16,6 @@ HTML:
     </div>
 ```
 
-Mortar requires each child element to have a set width and height.
-
 Options
 -------
 The options object is the first parameter:
