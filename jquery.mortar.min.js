@@ -1,6 +1,6 @@
 /**
 MORTAR.JS
-http://tom-alexander.github.com/mortar-js
+https://github.com/Tom-Alexander/mortar-js/
 
 copyright(c) 2013 Tom Alexander
 Licensed under the MIT license.
