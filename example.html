@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mortar-js Example</title>
+        <script src="http://code.jquery.com/jquery.min.js"></script>
+        <script src="jquery.mortar.min.js"></script>
+        <style>
+            html,body{font-family:Helvetica;}
+            #view div{width:100px;height:100px;color:#FFF;text-align:center;margin:10px;padding:5px;}
+            li{display:inline-block;}
+            .red{background:#a32828;}
+            .blue{background:#1c3672;}
+        </style>
+        <script>
+            $(function(){
+                $('#view').mortar();
+                $('.filter-all').click(function(){
+                    $('#view').mortar();
+                })
+                $('.filter-red').click(function(){
+                    $('#view').mortar({filter: 'red'});
+                })
+                $('.filter-blue').click(function(){
+                    $('#view').mortar({filter: 'blue'});
+                }) 
+            })
+        </script>
+    </head>
+    <body>
+        <h1>Mortar Testing</h1>
+        <ul>
+            <li><a href="#" class="filter-all">show All</a> / </li>
+            <li><a href="#" class="filter-red">show red</a> / </li>
+            <li><a href="#" class="filter-blue">show blue</a> / </li>
+        </ul>
+    <div id="outer">
+        <div id="view">
+            <div class="blue">First</div>
+            <div class="red">Second</div>
+            <div class="blue">Third</div>
+            <div class="red">Forth</div>
+            <div class="blue">Fith</div>
+            <div class="red">Sixth</div>
+        </div>
+    </div>
+    </body>
+</html>
