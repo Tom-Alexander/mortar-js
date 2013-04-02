@@ -1,7 +1,6 @@
 Usage
 =====
-Mortar is a jquery plugin used for masonry grid layouts.
-Javascript: 
+Mortar is a jquery plugin used for grid layouts.
 ```
     $('#container').mortar();
 ```
@@ -21,6 +20,11 @@ Mortar requires each child element to have a set width and height.
 
 Options
 -------
-''' columns ''' (integer) the number of columns in the grid
-''' filter ''' (string) the name of the class you want to filter from the grid
-''' duration ''' (integer) the duration of the animation. Set to 0 for no aninmation
+The options object is the first parameter:
+``` 
+$('#container').mortar({columns: 6, filter: 'red', duration: 1000}) 
+```
+
+ - ``` columns ``` (integer) the number of columns in the grid
+ - ``` filter ``` (string) the name of the class you want to filter from the grid
+ - ``` duration ``` (integer) the duration of the animation. Set to 0 for no animation
