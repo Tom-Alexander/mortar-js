@@ -1,6 +1,6 @@
 Usage
 =====
-Mortar is a jquery plugin used for grid layouts.
+Mortar is a jquery plugin for grid layouts.
 ```
     $('#container').mortar();
 ```
